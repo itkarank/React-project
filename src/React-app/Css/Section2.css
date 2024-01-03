@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+.Section2 {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: 50%50%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  display: block;
+}
+
+.Section2 h1 strong {
+  color: #263d5a;
+}
+.Section2-Col ,.Section2-title
+{
+width: 100%;
+   text-align: center;
+}
+.Section2-row2
+{
+  padding-bottom: 3rem;
+}
+.Section2-row {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+  backdrop-filter: blur(3.5px);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  overflow: visible;
+  max-width: 100%;
+}
+
+.Section2-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  height: 380px;
+}
+.Section2card-title {
+  font-size: 20px;
+  color: #263d5a;
+  width: 100%;
+}
+
+.Section2card-text {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #263d5a;
+}
+
+.bulb,
+.user,
+.colorpallet {
+  display: inline-flex;
+  font-size: 5rem;
+  color: #a148ff;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin-top: 15px;
+  margin-left: 14px; 
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.icon-container {
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+
+/* Media query */
+
+@media screen and (max-width:995px){
+  .Section2-col3{
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
