@@ -17,7 +17,7 @@ pipeline {
                         
                         sh "docker build -t react-project -f docker/Dockerfile ."
                         sh "docker tag  react-project karan143/react-project:latest"
-                        sh "docker push karan143/React-project:latest"
+                        sh "docker push karan143/react-project:latest"
                     }
                 }
             }
