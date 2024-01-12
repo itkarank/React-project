@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/itkarank/terrajen1'
+                git branch: 'main', url: 'https://github.com/itkarank/React-Project'
             }
         }
 
