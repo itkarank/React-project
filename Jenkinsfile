@@ -13,10 +13,10 @@ pipeline {
                 script{
 
                     
-                    withDockerRegistry(credentialsId: '4dc60544-f54b-48cd-ad44-bd685badc389', toolName: 'React-Project') {
+                    withDockerRegistry(credentialsId: '4dc60544-f54b-48cd-ad44-bd685badc389', toolName: 'react-project') {
                         
-                        sh "docker build -t React-Project -f docker/Dockerfile ."
-                        sh "docker tag  React-Project karan143/React-Project:latest"
+                        sh "docker build -t react-project -f docker/Dockerfile ."
+                        sh "docker tag  react-project karan143/react-project:latest"
                         sh "docker push karan143/React-project:latest"
                     }
                 }
@@ -26,8 +26,8 @@ pipeline {
         stage('Docker Deploy to Container') {
             steps {
                 script {
-                withDockerRegistry(credentialsId: '4dc60544-f54b-48cd-ad44-bd685badc389', toolName: 'React-Project') {
-                    sh "docker run -d --name shopping-cart -p 8070:8070 karan143/React-Project:latest" }
+                withDockerRegistry(credentialsId: '4dc60544-f54b-48cd-ad44-bd685badc389', toolName: 'react-project') {
+                    sh "docker run -d --name react-project -p 8070:8070 karan143/react-project:latest" }
                 }
                 
             }
