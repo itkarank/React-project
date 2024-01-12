@@ -15,7 +15,7 @@ pipeline {
                     
                     withDockerRegistry(credentialsId: '4dc60544-f54b-48cd-ad44-bd685badc389', toolName: 'react-project') {
                         
-                        sh "docker build -t react-project -f docker/Dockerfile ."
+                        sh "docker build -t react-project -f Dockerfile "
                         sh "docker tag  react-project karan143/react-project:latest"
                         sh "docker push karan143/react-project:latest"
                     }
