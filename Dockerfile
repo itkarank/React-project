@@ -13,8 +13,10 @@ RUN npm install
 # Copy all files from the current directory to the working directory
 COPY . .
 
+RUN npm run build
+
 # Make port 3000 available to the world outside this container
-EXPOSE 3000
+EXPOSE 8070
 
 ENV APP_HOME /usr/src/app
 
